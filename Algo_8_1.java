@@ -11,7 +11,6 @@ public class Algo_8_1 {
                 if (numA[i]==numB[j]) num = num.concat(numA[i]+", ");
             }
         }
-
         System.out.println(num);
     }
 }
