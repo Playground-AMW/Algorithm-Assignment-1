@@ -7,9 +7,10 @@ public class Algo_1 {
 
         int number;
         do {
-            System.out.print("Please enter a positive number: ");
+            System.out.print("Please enter a number: ");
             number = scanner.nextInt();
             scanner.nextLine();
+            if (number < 0) System.out.print("Please enter a positive number");
         } while (number < 0);
 
         System.out.print("Fibonacci sequence up to " + number + " is: ");

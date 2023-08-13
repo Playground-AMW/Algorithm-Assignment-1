@@ -7,8 +7,10 @@ public class Algo_9 {
         String input = "";
 
         do {
-            System.out.print("Enter sentences: ");
+            System.out.print("Enter a single word: ");
             input = scanner.nextLine();
+            if (input.isBlank()) System.out.println("Input can't empty!\n");
+            if (input.contains(" ")) System.out.println("Enter a SINGLE word!\n");
         } while (input.isBlank()||input.contains(" "));
 
         char ch;

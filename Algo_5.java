@@ -10,6 +10,7 @@ public class Algo_5 {
         do {
             System.out.print("Enter a text: ");
             input = scanner.nextLine();
+            if (input.isBlank()) System.out.println("Text can't be empty\n");
         } while (input.isBlank());
 
         char[] text = input.toCharArray();
