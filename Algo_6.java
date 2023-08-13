@@ -19,7 +19,6 @@ public class Algo_6 {
         }
         newText[newText.length-1] = ' ';
 
-        char ch;
         String tempStr = "";
         String revStr = "";
 
@@ -27,15 +26,10 @@ public class Algo_6 {
 
             tempStr += newText[i];
             if(newText[i] == ' ') {
-                for (int j = 0; j < tempStr.length()-1; j++) {
-                    ch = tempStr.charAt(j);
-                    revStr = ch + revStr;
-                }
-                System.out.print(revStr+ " ");
+                revStr = tempStr + revStr; 
                 tempStr = "";
-                revStr = "";
-                ch = ' ';
             }
-        }        
+        } 
+        System.out.print(revStr);       
     }
 }
